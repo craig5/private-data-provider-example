@@ -1,0 +1,22 @@
+team: platform
+default_roles: [developer]
+
+users:
+  - username: grace
+    full_name: Grace Hopper
+    roles: [admin]
+
+  # No roles: gets the team's default_roles.
+  - username: dennis
+    full_name: Dennis Ritchie
+
+  - username: alan
+    full_name: Alan Turing
+    roles: [developer, oncall]
+    email: alan.turing@example.org
+
+  # Disabled users are skipped entirely.
+  - username: charles
+    full_name: Charles Babbage
+    roles: [admin]
+    disabled: true

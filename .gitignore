@@ -42,3 +42,17 @@ terraform.rc
 # Optional: ignore plan files saved before destroying Terraform configuration
 # Uncomment the line below if you want to ignore planout files.
 # planout
+
+# Lock files from init. The tf-with-provider one records the checksum of a
+# provider built on this machine, so it means nothing anywhere else.
+.terraform.lock.hcl
+
+# Python test caches
+__pycache__/
+.pytest_cache/
+
+# Python virtualenv for the tf-hcl-only tests
+.venv/
+
+# Scratch files from `make compare`
+/.compare-*

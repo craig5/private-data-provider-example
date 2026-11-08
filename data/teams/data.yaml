@@ -1,0 +1,13 @@
+# No default_roles here, so every user must list theirs.
+team: data
+
+users:
+  - username: ada
+    full_name: Ada Lovelace
+    roles: [analyst]
+
+  - username: edsger
+    full_name: Edsger Dijkstra
+    roles:
+      - analyst
+      - developer

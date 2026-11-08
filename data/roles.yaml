@@ -1,0 +1,10 @@
+# Every role a user can hold. A role with no body is valid; its description
+# defaults to empty.
+roles:
+  admin:
+    description: Full access to everything
+  developer:
+    description: Deploy and debug services
+  oncall:
+    description: Acknowledge and resolve pages
+  analyst:
